@@ -1,0 +1,30 @@
+.table-div {
+  text-align: left;
+  background-color: teal;
+  width: 100%;
+  max-width: 425px;
+  font-size: 0.8rem;
+  /* color: gray; */
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, 400px) 10%;
+}
+.table-div > table {
+  max-width: 300px;
+}
+.personal-intro > table > caption h2,
+.internationl-info > table > caption h2,
+.career-static > table > caption h2,
+.domestic-team-info > table > caption h2 {
+  text-align: center;
+  background-color: yellow;
+}
+.personal-intro > table > tbody tr td,
+.internationl-info > table > tbody tr td,
+.domestic-team-info .team {
+  padding-left: 50px;
+  background-color: gray;
+}
+/* tfoot {
+  text-align: end;
+} */

@@ -1,0 +1,160 @@
+:root {
+  --dark-primary-color: rgb(48, 63, 161);
+  --primary-color: rgb(64, 81, 181);
+  --light-primary-color: #c5cae9;
+  --text-icon-color: #ffffff;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --divider-color: #bdbdbd;
+  --accent-color: #ff4081;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.5rem;
+  /* font-family: "Permanent Marker", sans-serif; */
+  font-family: "Raleway", sans-serif;
+  color: var(--secondary-text-color);
+}
+.cover-image {
+  background: url(https://dl.dropboxusercontent.com/s/qery1jsxvtfsq51/cover_desktop.jpg?dl=0)
+    no-repeat center center fixed;
+  background-size: cover;
+}
+.cover-page {
+  width: 100%;
+  height: 100vh;
+  background-color: #3e456b;
+  opacity: 0.8;
+}
+.title {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  color: var(--text-icon-color);
+  font-family: "Reenie Beanie", cursive;
+  text-align: center;
+}
+.title h1 {
+  font-size: 5rem;
+  font-weight: 200;
+  /* margin-bottom: 15px; */
+  color: var(--text-icon-color);
+}
+.title h2 {
+  font-size: 2rem;
+  font-weight: 100;
+  color: var(--text-icon-color);
+}
+.scroll {
+  /* background-color: teal; */
+  color: white;
+  position: absolute;
+  bottom: 60px;
+  width: 200px;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+  padding-bottom: 40px;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.scroll a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.scroll-arrow {
+  color: var(--accent-color);
+  padding-top: 25px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@media (max-width: 790px) {
+  .title h1 {
+    font-size: 3rem;
+  }
+  .title h2 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 420px) {
+  .cover-image {
+    background: url(https://dl.dropboxusercontent.com/s/dfynkdansigr6u7/cover_mobile.jpg?dl=0)
+      no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+
+.container {
+  /* background-color: teal; */
+  width: 50%;
+  margin: 0 auto 0 auto;
+}
+.dhoni-intro .hr-style {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgb(255, 64, 129),
+    rgba(0, 0, 0, 0)
+  );
+}
+.dhoni-intro h2 {
+  /* background-color: teal; */
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-top: 15px;
+  text-align: center;
+}
+
+.dhoni-intro p {
+  margin-top: 25px;
+  font-size: 1rem;
+}
+
+.dhoni-img img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  padding: 3px;
+  background-size: ;
+  border: 1px solid var(--secondary-text-color);
+}
+#main .personal-inro table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 50%;
+  color: white;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: auto;
+  table-layout: fixed;
+  text-align: center;
+  margin-top: 10px;
+}
